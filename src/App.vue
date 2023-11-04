@@ -155,7 +155,7 @@ onMounted(() => {
     </div>
 
     <div h-50px flex items-center w-full justify-center>
-      <button :disabled="removeFlag" mr-10px @click="handleRemove">
+      <button :="removeFlag" mr-10px @click="handleRemove">
         移出前三个
       </button>
       <button :disabled="backFlag" @click="handleBack">
